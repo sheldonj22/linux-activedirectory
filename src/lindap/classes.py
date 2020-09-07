@@ -200,7 +200,7 @@ class LDAPObject:
         if type(target_ou) != OU:
             print("Target OU should be of type OU instead of ", type(target_ou))
             return
-        print(type(target_ou))
+
         self.ldap.move_object(self.distinguishedName, target_ou)
 
     def refresh(self):
